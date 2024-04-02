@@ -10,7 +10,7 @@ from diffprivlib.models import GaussianNB
 import base64
 
 # Adjust the path to the correct location
-sys.path.insert(0, 'C:/Users/tonyv/OneDrive/Desktop/differential-privacy-library-main')
+sys.path.insert(0, 'C:/Users/tonyv/OneDrive/Desktop/Main Project')
 
 # Ignore all warnings (use with caution)
 warnings.filterwarnings("ignore")
