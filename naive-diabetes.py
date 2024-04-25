@@ -84,3 +84,4 @@ if uploaded_file is not None:
     # Plotting accuracy
     st.subheader("Differentially Private Naive Bayes Accuracy on Diabetes Dataset:")
     st.write(f"Test accuracy for epsilon {epsilon} on diabetes dataset: {accuracy_diabetes}")
+#
