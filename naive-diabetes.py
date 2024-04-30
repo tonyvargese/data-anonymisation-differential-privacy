@@ -73,10 +73,6 @@ if st.session_state.is_logged_in:
         # Call the function to update the model and return accuracy
         accuracy = update_model_and_visualizations()
 
-        # Display accuracy
-        st.subheader("Differentially Private Naive Bayes Accuracy:")
-        st.write(f"Test accuracy for epsilon {epsilon}: {accuracy}")
-
         # Display key statistics of the original dataset before differential privacy
         st.subheader("Key Statistics of Original Dataset Before Differential Privacy:")
         st.write(df.describe())
@@ -106,13 +102,13 @@ if st.session_state.is_logged_in:
             sns.histplot(data=dp_stats, x=feature, hue='Private_Predictions', kde=True, multiple="stack")
             st.pyplot()
 
+        # Display model accuracy
+        st.subheader("Model Accuracy:")
+        st.write(f"The accuracy of the model for epsilon {epsilon}: {accuracy:.2f}")
+
         # Provide a link to download the modified dataset
         st.subheader("Download Modified Dataset:")
-        csv_file = dp_stats.to_csv(index=False)
-        b64 = base64.b64encode(csv_file.encode()).decode()
-        href = f'<a href="data:file/csv;base64,{b64}" download="modified_dataset.csv">Download CSV</a>'
+        modified_csv = dp_stats.to_csv(index=False)
+        b64 = base64.b64encode(modified_csv.encode()).decode()
+        href = f'<a href="data:file/csv;base64,{b64}" download="modified_dataset.csv" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; border-radius: 4px; border: none; cursor: pointer;">Download Modified Dataset</a>'
         st.markdown(href, unsafe_allow_html=True)
-
-        # Plotting accuracy
-        st.subheader("Differentially Private Naive Bayes Accuracy on Dataset:")
-        st.write(f"Test accuracy for epsilon {epsilon} on dataset: {accuracy}")
