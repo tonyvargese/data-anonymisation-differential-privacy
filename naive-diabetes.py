@@ -112,3 +112,4 @@ if st.session_state.is_logged_in:
         b64 = base64.b64encode(modified_csv.encode()).decode()
         href = f'<a href="data:file/csv;base64,{b64}" download="modified_dataset.csv" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; border-radius: 4px; border: none; cursor: pointer;">Download Modified Dataset</a>'
         st.markdown(href, unsafe_allow_html=True)
+#
