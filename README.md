@@ -32,7 +32,7 @@ To use this project:
 
 1. Clone the repository to your local machine.
 2. Install the required dependencies listed in `requirements.txt`.
-3. Run the `naive-diabetes.py` script to analyze the diabetes dataset with and without applying differential privacy techniques.
+3. Run the `main.py` script to analyze the diabetes dataset with and without applying differential privacy techniques.
 
 ## Dataset
 
