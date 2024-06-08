@@ -23,7 +23,7 @@ In the era of data-driven decision-making, ensuring privacy and confidentiality 
 - `research papers/`: Includes relevant research papers on data anonymization and differential privacy.
 - `diabetes.csv`: Dataset used for demonstrating data anonymization and privacy preservation techniques.
 - `feature_distributions_after_dp_diabetes.csv`: Output file containing feature distributions after applying differential privacy to the diabetes dataset.
-- `naive-diabetes.py`: Python script for analyzing the diabetes dataset with and without applying differential privacy techniques.
+- `main.py`: Python script for analyzing the diabetes dataset with and without applying differential privacy techniques.
 - `requirements.txt`: List of required Python packages for running the project.
 
 ## Usage
@@ -40,7 +40,7 @@ The `diabetes.csv` file contains a dataset with information about individuals' h
 
 ## Files
 
-- `naive-diabetes.py`: This Python script demonstrates the application of differential privacy techniques to the diabetes dataset.
+- `main.py`: This Python script demonstrates the application of differential privacy techniques to the diabetes dataset.
 - `feature_distributions_after_dp_diabetes.csv`: Output file containing feature distributions after applying differential privacy to the diabetes dataset.
 - `requirements.txt`: This file lists the required Python packages for running the project.
 
